@@ -7,9 +7,9 @@ on:
         description: Only verify login and friends without sending
         type: boolean
         default: false
-  # 每天北京时间 00:00 自动运行
-  schedule:
-    - cron: "0 16 * * *"
+  # 定时已停用：改用服务器 DouYinSparkFlow 执行，避免同账号双跑
+  # schedule:
+  #   - cron: "0 16 * * *"
 
 concurrency:
   group: douyin-daily-sender
